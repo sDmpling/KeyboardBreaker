@@ -6,3 +6,8 @@ buildCommand = "npm install"
 
 [deploy]
 startCommand = "npm start"
+healthcheckPath = "/"
+restartPolicyType = "ON_FAILURE"
+
+[deploy.networkPorts]
+PORT = 3000
